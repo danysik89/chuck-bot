@@ -1,0 +1,56 @@
+.contacts {
+  height: 100%;
+}
+
+.contacts-search {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  width: 100%;
+}
+
+.search-input {
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  outline: transparent;
+  font-size: 20px;  
+}
+
+.contacts-list {
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6;
+  height: calc(100% - 125px);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-list li {
+  display: flex;
+}
+
+.contacts-list-item {
+  width: 100%;
+  padding: 25px 20px;
+  overflow: auto;
+  text-decoration: none;
+  color: #222;
+  border-bottom: 1px solid #e6e6e6;
+}
+.contacts-list-item:hover {
+  background-color: #14c5c515;
+}
+
+.chats-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 20px;
+  color: #0bc7c7;
+}
