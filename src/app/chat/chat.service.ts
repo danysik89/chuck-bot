@@ -20,10 +20,10 @@ export class ChatService {
       id: 1,
       name: 'Ostap Ferneza',
       conversation: new BehaviorSubject([
-        {content: 'Привіт))', sentBy: 'user', date: new Date()}
-        {content: 'Як справи?', sentBy: 'user', date: new Date()}
-        {content: 'Привіт. Норм', sentBy: 'bot', date: new Date()}
-        {content: 'Йдеш тусіть?)', sentBy: 'user', date: new Date()}
+        {content: 'Привіт))', sentBy: 'user', date: new Date()},
+        {content: 'Як справи?', sentBy: 'user', date: new Date()},
+        {content: 'Привіт. Норм', sentBy: 'bot', date: new Date()},
+        {content: 'Йдеш тусіть?)', sentBy: 'user', date: new Date()},
         {content: 'Го', sentBy: 'bot', date: new Date()}
       ])
     },
