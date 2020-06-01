@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 export class Message {
-  constructor(public content: string, public sentBy: string, date: any) {}
+  constructor(public content: string, public sentBy: string, public date: Date) {}
 }
 
 @Injectable()
@@ -20,7 +19,13 @@ export class ChatService {
     {
       id: 1,
       name: 'Ostap Ferneza',
-      conversation: new BehaviorSubject([])
+      conversation: new BehaviorSubject([
+        {content: 'Привіт))', sentBy: 'user', date: new Date()}
+        {content: 'Як справи?', sentBy: 'user', date: new Date()}
+        {content: 'Привіт. Норм', sentBy: 'bot', date: new Date()}
+        {content: 'Йдеш тусіть?)', sentBy: 'user', date: new Date()}
+        {content: 'Го', sentBy: 'bot', date: new Date()}
+      ])
     },
     {
       id: 2,

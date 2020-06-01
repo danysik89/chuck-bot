@@ -23,10 +23,8 @@ export class ChatDialogComponent implements OnInit {
       this.messages = [];
       this.currentChatId = +id;
       this.currentContact = this.chatService.conversations.find(contact => contact.id === this.currentChatId);
-      console.log(this.currentContact);
       this.chatService.conversations[+id].conversation
         .subscribe(value => {
-          console.log(value);
           this.messages = [...value];
         });
     });
@@ -34,7 +32,7 @@ export class ChatDialogComponent implements OnInit {
   }
 
   sendMessage() {
-    if (this.formValue.length) {
+    if (this.formValue) {
       this.chatService.converse(this.currentChatId, this.formValue);
       this.formValue = '';
     }

@@ -18,18 +18,19 @@
   width: 100%;
   box-sizing: border-box;
   border-radius: 20px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgba(0,0,0,.12);
   outline: transparent;
   font-size: 20px;  
 }
 
 .contacts-list {
   background-color: #fff;
-  border-top: 1px solid #e6e6e6;
-  height: calc(100% - 125px);
+  border-top: 1px solid rgba(0,0,0,.12);
+  height: calc(100% - 126px);
   list-style-type: none;
   padding: 0;
   margin: 0;
+  overflow: auto;
 }
 
 .contacts-list li {
@@ -42,10 +43,13 @@
   overflow: auto;
   text-decoration: none;
   color: #222;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.contacts-list-item.active {
+  background-color: #0bc7c728;
 }
 .contacts-list-item:hover {
-  background-color: #14c5c515;
+  background-color: #f5f5f5;
 }
 
 .chats-title {
